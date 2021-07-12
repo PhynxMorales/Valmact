@@ -1,0 +1,102 @@
+:root {
+  --color-valmact: #102649;
+}
+
+.bg-productos {
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 500px;
+}
+
+.overlay-producto {
+  position: absolute;
+  top: 0;
+  background: rgb(0, 0, 0);
+  background: rgba(0, 0, 0, 0.26);
+  color: #f1f1f1;
+  width: 100%;
+  height: 500px;
+  transition: 0.5s ease;
+  opacity: 1;
+}
+
+.container-banner-productos {
+  color: #f2f2f2;
+}
+.container-banner-productos h1 {
+  letter-spacing: 2px;
+  font-size: 4rem;
+}
+
+.container-banner-productos p:first-of-type {
+  font-size: 1rem;
+  font-weight: 700;
+  letter-spacing: 4px;
+}
+.text-envio {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.btn-valmact-productos {
+  width: 50px;
+  height: 50px;
+  color: #fff;
+  background-color: var(--color-valmact);
+  border-radius: 50%;
+  box-shadow: inset 0 0 0 0 #ffffff;
+  font-weight: bold;
+  border: none;
+  transition: ease-in 0.3s;
+  outline: none;
+}
+.btn-valmact-productos:hover {
+  box-shadow: inset 300px 0 0 0 #222121;
+  color: var(--color-valmact) !important;
+  border-radius: 50%;
+}
+.btn-valmact-productos a {
+  color: #fff;
+  text-decoration: none;
+  width: 50%;
+}
+.btn-valmact-productos a:hover {
+  color: #fff;
+  font-weight: bold;
+}
+.text-muted {
+  color: #d3d3d3 !important;
+}
+
+.btn-valmact {
+  width: 100%;
+}
+.nav-pills .nav-link {
+  padding: 40px 10px 25px 10px;
+  font-size: 1.5em;
+  border-bottom: 2px solid #10101034 !important;
+}
+.nav-pills .nav-link.active,
+.nav-pills .show > .nav-link {
+  background-color: var(--color-valmact) !important;
+}
+.side-bar-productos {
+  position: sticky !important;
+  top: 110px;
+}
+
+.card-productos {
+  margin-top: 10px;
+}
+
+@media screen and (min-width: 300px) and (max-width: 767px) {
+  .container-banner-productos h1 {
+    letter-spacing: 2px;
+    font-size: 2.5rem;
+  }
+  .card {
+    width: 100% !important;
+  }
+}
